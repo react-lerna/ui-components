@@ -1,0 +1,40 @@
+{
+  "name": "ui-components",
+  "version": "0.1.0",
+  "description": "UI components library",
+  "scripts": {
+    "start": "start-storybook -p 3001 --ci",
+    "pretty": "prettier --write components/**/*.js",
+    "test": "jest",
+    "build": "webpack --mode production",
+    "generate": "generact"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/react-lerna/ui-components.git"
+  },
+  "author": "João Belo <joaobelo.dev@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/jpbelo/bit-ui-components#readme",
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/preset-react": "^7.0.0",
+    "@storybook/addon-actions": "^5.0.11",
+    "@storybook/addon-centered": "^5.0.11",
+    "@storybook/react": "^5.0.11",
+    "babel-loader": "^8.0.6",
+    "generact": "^0.4.0",
+    "jest": "^24.8.0",
+    "prettier": "^1.17.1",
+    "storybook-addon-jsx": "^7.1.2",
+    "webpack": "^4.31.0",
+    "webpack-cli": "^3.3.2"
+  },
+  "dependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "styled-components": "^4.2.0"
+  }
+}
