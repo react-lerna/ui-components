@@ -1,6 +1,6 @@
 {
-  "name": "ui-components",
-  "version": "0.1.0",
+  "name": "@react-lerna/ui-components",
+  "version": "0.1.1",
   "description": "UI components library",
   "scripts": {
     "start": "start-storybook -p 3001 --ci",

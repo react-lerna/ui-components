@@ -21,7 +21,4 @@ Paragraph.propTypes = {
   title: PropTypes.string.isRequired,
 }
 
-Paragraph.defaultProps = {
-}
-
 export default Paragraph
