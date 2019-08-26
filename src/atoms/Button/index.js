@@ -1,3 +1,8 @@
-export default function Button() {
-  return <button>Hello</button>
+import {Component} from 'react'
+
+class Button extends Component {
+  render() {
+    return <h1>Hello, {this.props.name}</h1>;
+  }
 }
+export default Button
