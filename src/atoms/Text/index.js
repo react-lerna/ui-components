@@ -1,2 +1,7 @@
-export { default as Headings } from './Headings'
-export { default as Paragrapha } from './Paragraph'
+import { default as Heading } from './Heading'
+import { default as Paragraph } from './Paragraph'
+
+export default {
+  Heading,
+  Paragraph,
+}

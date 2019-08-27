@@ -1,24 +1,43 @@
-import React, { Component } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
+import { fontSize } from 'styled-system'
 
-const StyledParagraph = styled.p`
-  color: purple;
+const StyledText= styled.p`
+  ${fontSize}
+  color: ${props => props.theme.colors.grey.main};
 `
 
-class Paragraph extends Component {
-  render() {
-    const { title } = this.props
-    return (
-      <StyledParagraph>
-        {title}
-      </StyledParagraph>
-    )
-  }
+const types = {
+  default: {
+    tag: "p",
+    size: 2,
+  },
+  quote: {
+    tag: "q",
+    size: 2,
+  },
+  small: {
+    tag: "small",
+    size: 1,
+  },
 }
 
+ const Paragraph = ({ type = 'default', text }) => (
+  <StyledText as={ types[type].tag } fontSize={types[type].size}>
+    {text}
+  </StyledText>
+)
+
 Paragraph.propTypes = {
-  title: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+  type:  PropTypes.oneOf('default', 'quote', 'small'),
+  variant: PropTypes.string,
+}
+
+Paragraph.defaultTypes = {
+  type: 'default',
+  variant: 'primary',
 }
 
 export default Paragraph

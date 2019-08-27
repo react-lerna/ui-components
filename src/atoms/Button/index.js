@@ -1,9 +1,1 @@
-import React from 'react'
-
-class Button extends React.Component {
-  render() {
-    return <h1>Hello world</h1>;
-  }
-}
-
-export default Button
+export { default, StyledButton } from './Button'
