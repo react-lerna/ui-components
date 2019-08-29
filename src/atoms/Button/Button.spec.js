@@ -1,4 +1,16 @@
-it('sums numbers', () => {
-  expect(3).toEqual(3)
-  expect(4).toEqual(4)
+import React from 'react'
+import 'jest-styled-components'
+
+import { renderWithTheme } from '../../utils/renderWithTheme'
+import Button from './Button'
+
+const mock = {
+  title: 'Secondary Button with primary text color',
+  secondary: true,
+  color: 'primary.dark',
+}
+
+test('Button display correctly', () => {
+  let tree = renderWithTheme(<Button {...mock} />).toJSON()
+  expect(tree).toMatchSnapshot()
 })

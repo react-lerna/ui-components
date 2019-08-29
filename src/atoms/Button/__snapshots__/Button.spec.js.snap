@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button display correctly 1`] = `
+.c0 {
+  color: hsl(80,50%,35%);
+  display: block;
+  border-radius: 6px;
+  border: 1px solid hsl(190,100%,65%);
+  padding: 10px;
+  background-color: hsl(190,50%,85%);
+}
+
+.c0:hover {
+  background-color: hsl(190,50%,92%);
+}
+
+<button
+  className="c0"
+  color="primary.dark"
+  title="Secondary Button with primary text color"
+>
+  Secondary Button with primary text color
+</button>
+`;
