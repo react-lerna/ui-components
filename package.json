@@ -8,7 +8,7 @@
     "pretty": "prettier --write components/**/*.js",
     "test": "jest",
     "generate": "generact",
-    "build:ui": "babel ./src -d ./dist -s inline --ignore 'src/**/stories.js'",
+    "build:ui": "babel ./src -d ./dist -s inline --ignore 'src/**/stories.js','src/**/*.spec.js'",
     "build": "build-storybook -c .storybook -o public"
   },
   "dependencies": {
