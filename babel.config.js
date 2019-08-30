@@ -3,7 +3,7 @@ module.exports = function (api) {
 
   const presets = [ "@babel/preset-env", "@babel/preset-react", "minify" ];
   const plugins = [ 'babel-plugin-styled-components' ];
-  const ignore = [ 'src/**/stories.js', 'src/**/*.spec.js' ];
+  const ignore = [ 'src/**/*.spec.js' ];
 
   return {
     presets,
