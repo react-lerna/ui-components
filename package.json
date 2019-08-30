@@ -9,7 +9,7 @@
     "test": "jest",
     "generate": "generact",
     "build:ui": "babel ./src -d ./dist -s inline --ignore 'src/**/stories.js'",
-    "build": "build-storybook -c .storybook -o .out"
+    "build": "build-storybook -c .storybook -o public"
   },
   "dependencies": {
     "prop-types": "^15.7.2",
