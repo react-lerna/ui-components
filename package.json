@@ -4,11 +4,11 @@
   "main": "dist/index.js",
   "description": "UI components library",
   "scripts": {
-    "start": "start-storybook -p 3001 --ci",
+    "dev": "start-storybook -p 3001 --ci",
     "pretty": "prettier --write components/**/*.js",
     "test": "jest",
     "generate": "generact",
-    "build:ui": "babel ./src -d ./dist -s inline --ignore 'src/**/stories.js'",
+    "build:ui": "babel ./src -d ./dist -s inline",
     "build": "build-storybook -c .storybook -o public"
   },
   "dependencies": {
