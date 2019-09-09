@@ -1,36 +1,34 @@
 import React, { Fragment } from 'react'
 import { storiesOf } from '@storybook/react'
-import Button from '.'
+import { boolean, text } from '@storybook/addon-knobs'
 
-const mock1 = {
-  title: 'Button',
-  fontSize: [2, 3, 4],
-}
-const mock2 = {
-  title: 'Secondary Button',
-  secondary: true,
-}
-const mock3 = {
-  title: 'Disabled Button',
-  disabled: true,
-}
-const mock4 = {
-  title: 'Primary Button with white text color',
+import Button from '.'
+import markdownNotes from './README.md'
+
+const customMock1 = {
+  label: 'Primary Button with white text color',
   color: '#fff',
 }
-const mock5 = {
-  title: 'Secondary Button with primary text color',
+const customMock2 = {
+  label: 'Secondary Button with primary text color',
   secondary: true,
   color: 'primary.dark',
 }
 
 storiesOf('Atoms|Button', module)
-  .add('Primary', () => <Button {...mock1} />)
-  .add('Secondary', () => <Button {...mock2} />)
-  .add('Disabled', () => <Button {...mock3} />)
+  .add('As Button', () => (
+    <Button
+      label={text('Label', 'Sample Label')}
+      color={text('Color', '')}
+      secondary={boolean('Secondary', false)}
+      disabled={boolean('Disabled', false)}
+    />
+  ), {
+    notes: { markdown: markdownNotes },
+  })
   .add('Mix', () => (
     <Fragment>
-      <Button {...mock4} />
-      <Button {...mock5} />
+      <Button {...customMock1} />
+      <Button {...customMock2} />
     </Fragment>
   ))

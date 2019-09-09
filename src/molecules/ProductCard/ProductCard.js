@@ -15,7 +15,7 @@ class ProductCard extends Component {
       <StyledCard>
         <Atoms.Text.Heading title={title} level={3} />
         <Atoms.Text.Paragraph text={currency + ' ' + price} />
-        <Atoms.Button title={'Add to cart'} />
+        <Atoms.Button label={'Add to cart'} />
       </StyledCard>
     )
   }

@@ -29,7 +29,7 @@ export const StyledButton = styled.button`
 
 class Button extends Component {
   render() {
-    return <StyledButton {...this.props}>{this.props.title}</StyledButton>
+    return <StyledButton {...this.props}>{this.props.label}</StyledButton>
   }
 }
 

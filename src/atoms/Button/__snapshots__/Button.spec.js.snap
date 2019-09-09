@@ -17,7 +17,7 @@ exports[`Button display correctly 1`] = `
 <button
   className="c0"
   color="primary.dark"
-  title="Secondary Button with primary text color"
+  label="Secondary Button with primary text color"
 >
   Secondary Button with primary text color
 </button>
