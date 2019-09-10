@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react'
 
 import ProductCard from '.'
 
-const mock1 = {
+const mock = {
   title: 'Westpack Backpack',
   price: '79',
   currency: '€',
@@ -18,4 +18,4 @@ const mock1 = {
 }
 
 storiesOf('Molecules|Product Card', module)
-  .add('Primary', () => <ProductCard {...mock1} />)
+  .add('Primary', () => <ProductCard {...mock} />)

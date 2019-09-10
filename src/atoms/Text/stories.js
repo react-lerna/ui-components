@@ -1,5 +1,6 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
+import centered from '@storybook/addon-centered/react'
 
 import Heading from './Heading'
 import Paragraph from './Paragraph'
@@ -38,6 +39,7 @@ const SmallTextData = {
 }
 
 storiesOf('Atoms|Text')
+  .addDecorator(centered)
   .add('Heading 1', () => <Heading {...Heading1Data} />)
   .add('Heading 2', () => <Heading {...Heading2Data} />)
   .add('Heading 3', () => <Heading {...Heading3Data} />)

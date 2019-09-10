@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react'
 import { storiesOf } from '@storybook/react'
 import { boolean, text } from '@storybook/addon-knobs'
+import centered from '@storybook/addon-centered/react'
 
 import Button from '.'
 import markdownNotes from './README.md'
@@ -16,6 +17,7 @@ const customMock2 = {
 }
 
 storiesOf('Atoms|Button', module)
+  .addDecorator(centered)
   .add('As Button', () => (
     <Button
       label={text('Label', 'Sample Label')}
