@@ -1,4 +1,5 @@
+export { default as theme } from './theme'
 export { default as Atoms } from './atoms'
-// export Molecules from './src/molecules'
-// export Organisms from './src/organisms'
-// export Templates from './src/templates'
+export { default as Molecules } from './molecules'
+export { default as Organisms } from './organisms'
+export { default as Templates } from './templates'

@@ -31,7 +31,7 @@ const types = {
 
 Paragraph.propTypes = {
   text: PropTypes.string.isRequired,
-  type:  PropTypes.oneOf('default', 'quote', 'small'),
+  type:  PropTypes.oneOf(['default', 'quote', 'small']),
   variant: PropTypes.string,
 }
 

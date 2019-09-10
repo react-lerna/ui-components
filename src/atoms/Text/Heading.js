@@ -16,7 +16,7 @@ const Heading = ({ level, title }) => (
 
 Heading.propTypes = {
   title: PropTypes.string.isRequired,
-  level:  PropTypes.oneOf(1, 2, 3, 4, 5),
+  level:  PropTypes.oneOf([1, 2, 3, 4, 5]),
   variant: PropTypes.string,
 }
 
