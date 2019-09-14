@@ -2,16 +2,16 @@
 
 exports[`Button display correctly 1`] = `
 .c0 {
-  color: hsl(80,50%,35%);
+  color: #27784E;
   display: block;
-  border-radius: 6px;
-  border: 1px solid hsl(190,100%,65%);
-  padding: 10px;
-  background-color: hsl(190,50%,85%);
+  border-radius: 10px;
+  border: 1px solid #4CE897;
+  padding: 6px 12px;
+  background-color: transparent;
 }
 
 .c0:hover {
-  background-color: hsl(190,50%,92%);
+  background-color: #DEFFEE;
 }
 
 <button
