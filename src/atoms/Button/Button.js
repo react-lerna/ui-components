@@ -7,24 +7,29 @@ export const StyledButton = styled.button`
   ${color};
   ${space};
   display: block;
-  border-radius: 6px;
-  border: 1px solid ${props => (props.secondary ? props.theme.colors.secondary.main : props.theme.colors.primary.main)};
-  padding: 10px;
-  color: ${props => !props.color && props.theme.colors.grey.main};
-  background-color: ${props => (props.secondary ? props.theme.colors.secondary.bg : props.theme.colors.primary.bg)};
+  border-radius: 10px;
+  border: 1px solid ${props => props.theme.colors.primary.main};
+  padding: 6px 12px;
+  color: ${props => !props.color && props.theme.colors.secondary.dark};
+  background-color: transparent;
   ${props =>
-  !props.disabled &&
+  !props.secondary &&
   css`
-  &:hover {
-    background-color: ${props => (props.secondary ? props.theme.colors.secondary.bgAlt : props.theme.colors.primary.bgAlt)};
-  },
+    background-color: ${props => props.theme.colors.primary.main};
   `}
   ${props =>
-  props.disabled &&
-  css`
+  !props.disabled ?
+    css`
+      &:hover {
+        background-color: ${props => props.theme.colors.primary.light};
+      },
+    `
+    :
+    css`
       background-color: ${props => props.theme.colors.grey.light};
       border-color: ${props => props.theme.colors.grey.main};
-    `}
+    `
+  }
 `
 
 class Button extends Component {

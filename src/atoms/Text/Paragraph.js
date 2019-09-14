@@ -35,7 +35,7 @@ Paragraph.propTypes = {
   variant: PropTypes.string,
 }
 
-Paragraph.defaultTypes = {
+Paragraph.defaultProps = {
   type: 'default',
   variant: 'primary',
 }

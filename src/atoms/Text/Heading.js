@@ -20,7 +20,7 @@ Heading.propTypes = {
   variant: PropTypes.string,
 }
 
-Heading.defaultTypes = {
+Heading.defaultProps = {
   level: 5,
   variant: 'primary',
 }

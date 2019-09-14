@@ -1,6 +1,7 @@
 import React  from 'react'
 import { storiesOf } from '@storybook/react'
 import styled from 'styled-components'
+import centered from '@storybook/addon-centered/react'
 
 const TwoColumns = styled.div`
   display: flex;
@@ -13,28 +14,27 @@ const ColorBox = styled.div`
   display: flex;
 `
 
-storiesOf('Design System', module).add('Colors', () => (
+storiesOf('Design System', module)
+  .addDecorator(centered)
+  .add('Colors', () => (
   <TwoColumns>
     <div>
       <h1>variations</h1>
-      <ColorBox>main</ColorBox>
       <ColorBox>dark</ColorBox>
-      <ColorBox>bg</ColorBox>
-      <ColorBox>bgAlt</ColorBox>
+      <ColorBox>main</ColorBox>
+      <ColorBox>light</ColorBox>
     </div>
     <div>
       <h1>primary</h1>
-      <ColorBox color={'primary'} variation={'main'} />
       <ColorBox color={'primary'} variation={'dark'} />
-      <ColorBox color={'primary'} variation={'bg'} />
-      <ColorBox color={'primary'} variation={'bgAlt'} />
+      <ColorBox color={'primary'} variation={'main'} />
+      <ColorBox color={'primary'} variation={'light'} />
     </div>
     <div>
       <h1>secondary</h1>
-      <ColorBox color={'secondary'} variation={'main'} />
       <ColorBox color={'secondary'} variation={'dark'} />
-      <ColorBox color={'secondary'} variation={'bg'} />
-      <ColorBox color={'secondary'} variation={'bgAlt'} />
+      <ColorBox color={'secondary'} variation={'main'} />
+      <ColorBox color={'secondary'} variation={'light'} />
     </div>
   </TwoColumns>
 ))

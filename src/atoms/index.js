@@ -1,7 +1,9 @@
-import Button from './Button'
-import Text from './Text'
+import { Button, Link } from './Button'
+import { Heading, Paragraph } from './Text'
 
 export default {
   Button,
-  Text,
+  Link,
+  Heading,
+  Paragraph,
 }

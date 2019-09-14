@@ -4,22 +4,19 @@ export default {
   fontSizes: [8, 13, 21, 34, 55],
   colors: {
     primary: {
-      main: 'hsl(10,100%,50%)',
       dark: 'hsl(10,50%,35%)',
-      bg: 'hsl(10,50%,75%)',
-      bgAlt: 'hsl(10,50%,90%)',
+      main: 'hsl(10,100%,50%)',
+      light: 'hsl(10,50%,90%)',
     },
     secondary: {
-      main: 'hsl(110,100%,65%)',
       dark: 'hsl(110,50%,40%)',
-      bg: 'hsl(110,50%,85%)',
-      bgAlt: 'hsl(110,50%,92%)',
+      main: 'hsl(110,100%,65%)',
+      light: 'hsl(110,50%,85%)',
     },
     grey: {
-      main: 'hsl(260,60%,20%)',
+      dark: 'hsl(260,60%,20%)',
+      main: 'hsl(260,60%,40%)',
       light: 'hsl(260,60%,70%)',
-      bg: 'hsl(260,60%,40%)',
-      bgAlt: 'hsl(260,60%,50%)',
     },
   },
 }

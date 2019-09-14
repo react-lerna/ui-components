@@ -3,22 +3,13 @@ import { storiesOf } from '@storybook/react'
 import { boolean, text } from '@storybook/addon-knobs'
 import centered from '@storybook/addon-centered/react'
 
-import Button from '.'
+import { Button, Link } from '.'
 import markdownNotes from './README.md'
 
-const customMock1 = {
-  label: 'Primary Button with white text color',
-  color: '#fff',
-}
-const customMock2 = {
-  label: 'Secondary Button with primary text color',
-  secondary: true,
-  color: 'primary.dark',
-}
 
-storiesOf('Atoms|Button', module)
+storiesOf('Atoms|Buttons', module)
   .addDecorator(centered)
-  .add('As Button', () => (
+  .add('Button', () => (
     <Button
       label={text('Label', 'Sample Label')}
       color={text('Color', '')}
@@ -28,9 +19,13 @@ storiesOf('Atoms|Button', module)
   ), {
     notes: { markdown: markdownNotes },
   })
-  .add('Mix', () => (
-    <Fragment>
-      <Button {...customMock1} />
-      <Button {...customMock2} />
-    </Fragment>
+  .add('Link', () => (
+    <Link
+      label={text('Label', 'Sample Label')}
+      url={text('url', 'https://google.com')}
+      isExternal={boolean('External Link', true)}
+      color={text('Color', '')}
+      secondary={boolean('Secondary', false)}
+      disabled={boolean('Disabled', false)}
+    />
   ))

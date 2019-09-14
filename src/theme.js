@@ -19,22 +19,19 @@ export default {
   fontSizes: [8, 13, 21, 34, 55],
   colors: {
     primary: {
-      main: 'hsl(80,100%,50%)',
-      dark: 'hsl(80,50%,35%)',
-      bg: 'hsl(80,50%,75%)',
-      bgAlt: 'hsl(80,50%,90%)',
+      dark: '#27784E',
+      main: '#4CE897',
+      light: '#DEFFEE',
     },
     secondary: {
-      main: 'hsl(190,100%,65%)',
-      dark: 'hsl(190,50%,40%)',
-      bg: 'hsl(190,50%,85%)',
-      bgAlt: 'hsl(190,50%,92%)',
+      dark: '#162D3D',
+      main: '#316388',
+      light: '#5F6E79',
     },
     grey: {
-      main: 'hsl(0,0%,20%)',
+      dark: 'hsl(0,0%,20%)',
+      main: 'hsl(0,0%,40%)',
       light: 'hsl(0,0%,90%)',
-      bg: 'hsl(0,0%,40%)',
-      bgAlt: 'hsl(0,0%,50%)',
     },
   },
 }
