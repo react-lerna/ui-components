@@ -8,6 +8,7 @@ import mainTheme from '../src/theme'
 import alternativeTheme from '../src/theme-alt'
 
 const theme = require.context('../src', true, /theme.stories\.js$/)
+const utils = require.context('../src/utils', true, /stories\.js$/)
 const atoms = require.context('../src/atoms', true, /stories\.js$/)
 const molecules = require.context('../src/molecules', true, /stories\.js$/)
 const organisms = require.context('../src/organisms', true, /stories\.js$/)
@@ -15,6 +16,7 @@ const templates = require.context('../src/templates', true, /stories\.js$/)
 
 const reqs = [
   theme,
+  utils,
   atoms,
   molecules,
   organisms,
