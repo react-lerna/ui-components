@@ -10,6 +10,9 @@ export const DualColumn = styled.div`
   width: 100%;
   border: 1px solid blue;
   display: flex;
+  & > div {
+    width: 50%;
+  }
 `
 
 class Grid extends Component {

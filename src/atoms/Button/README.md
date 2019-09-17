@@ -2,10 +2,10 @@
 The Button component has the following options:
 
 <br/>
-<br/>
 
 ## Exemple
-```json
+
+```js
 {
     label: 'Button text',
     color: 'primary.dark',
@@ -18,7 +18,8 @@ The Button component has the following options:
 <br/>
 
 ## Types
-```json
+
+```js
 {
     label: string,
     color: string,
@@ -30,17 +31,19 @@ The Button component has the following options:
 <br/>
 <br/>
 
-## Label
+### label
 
 use any string like:
 
-`label: 'anything text'`
-
-<br/>
-<br/>
-
-## Color
+```js
+label: 'anything text'
 ```
+
+<br/>
+
+### color
+
+```code
 use a string that is:
 
 1. option from the design system
@@ -60,19 +63,21 @@ use a string that is:
 ```
 
 <br/>
-<br/>
 
-## Secondary
-
-use true or false (default is false)
-
-`secondary: true`
-
-<br/>
-<br/>
-
-## Disabled
+### secondary
 
 use true or false (default is false)
 
-`disabled: false`
+```js
+secondary: true
+```
+
+<br/>
+
+### disabled
+
+use true or false (default is false)
+
+```js
+disabled: false
+```

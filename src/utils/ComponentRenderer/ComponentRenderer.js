@@ -1,5 +1,4 @@
 import React, { Component, Fragment } from 'react'
-import PropTypes from 'prop-types'
 import { Atoms, Molecules, Organisms, Templates } from '../../index'
 
 class ComponentRenderer extends Component {
@@ -20,7 +19,5 @@ class ComponentRenderer extends Component {
     )
   }
 }
-
-ComponentRenderer.propTypes = {}
 
 export default ComponentRenderer
