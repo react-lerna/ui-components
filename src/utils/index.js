@@ -1,5 +1,1 @@
-import { ComponentRenderer } from './ComponentRenderer'
-
-export default {
-  ComponentRenderer,
-}
+export { ComponentRenderer } from './ComponentRenderer'

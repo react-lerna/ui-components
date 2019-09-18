@@ -1,7 +1,2 @@
-import Layout from './Layout'
-import Grid from './Grid'
-
-export default {
-  Layout,
-  Grid,
-}
+export Layout from './Layout'
+export Grid from './Grid'

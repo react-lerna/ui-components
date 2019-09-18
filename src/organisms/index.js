@@ -1,9 +1,3 @@
-import Footer from './Footer'
-import Header from './Header'
-import ProductList from './ProductList'
-
-export default {
-  Footer,
-  Header,
-  ProductList,
-}
+export Footer from './Footer'
+export Header from './Header'
+export ProductList from './ProductList'

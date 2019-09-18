@@ -27,7 +27,6 @@
     "@storybook/cli": "^5.1.11",
     "@storybook/react": "^5.1.11",
     "babel-loader": "^8.0.6",
-    "babel-plugin-styled-components": "^1.10.6",
     "generact": "^0.4.0",
     "jest": "^24.8.0",
     "jest-styled-components": "^6.3.3",
